@@ -1,0 +1,32 @@
+/**
+ * 
+ * @author jk
+ * 简单方法
+ *
+ */
+public class _1_TwoSum {
+    public static int[] twoSum(int[] nums, int target) {
+        int length = nums.length;
+        int[] result = new int[2];
+        for (int i = 0; i < length; i++) {
+            for (int j = i+1; j < length; j++) {
+                if (nums[i] + nums[j] == target) {
+                    result[0] = i;
+                    result[1] = j;
+                    return result;
+                }
+            }
+        }
+        return result;
+    }
+    
+    public static void main(String[] args) {
+        int[] nums = {3, 2, 4};
+        int target = 6;
+        int[] result = twoSum(nums, target);
+        for (int i : result) {
+            System.out.println(i);
+        }
+    }
+
+}
