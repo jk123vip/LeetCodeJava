@@ -3,8 +3,8 @@ import java.util.*;
 /**
  * 
  * @author jk
- * 
  * HashMap方法，速度更快
+ * 
  */
 
 public class _1_TwoSum1 {
